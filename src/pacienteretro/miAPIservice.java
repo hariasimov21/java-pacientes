@@ -20,19 +20,19 @@ import retrofit2.http.Path;
  * @author jaimediaz
  */
 public interface miAPIservice {
-    
-     @GET("/api/pacientes")
-    Call<List<Paciente>> obtenerTodosLosPacientes();    
-    
+
+    @GET("/api/pacientes")
+    Call<List<Paciente>> obtenerTodosLosPacientes();
+
     @GET("/api/pacientes/{rut}")
     Call<Paciente> obtenerPaciente(@Path("rut") int rut);
-    
+
     @POST("/api/pacientes")
     Call<Paciente> crearPaciente(@Body Paciente paciente);
-    
+
     @PUT("/api/pacientes/{rut}")
     Call<Paciente> actualizarPaciente(@Path("rut") int rut, @Body Paciente p);
-    
+
     @DELETE("/api/pacientes/{rut}")
     Call<ResponseBody> borrarPaciente(@Path("rut") int rut);
 }

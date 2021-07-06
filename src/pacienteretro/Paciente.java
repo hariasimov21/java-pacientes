@@ -10,6 +10,7 @@ package pacienteretro;
  * @author jaimediaz
  */
 public class Paciente {
+
     private int rut;
     private String nombre;
     private String direccion;
@@ -51,5 +52,5 @@ public class Paciente {
     public String toString() {
         return "Paciente{" + "rut=" + rut + ", nombre=" + nombre + ", direccion=" + direccion + ", isapre=" + isapre + '}';
     }
-    
+
 }
